@@ -1,0 +1,6 @@
+Line# 1: Token <CONST_CHAR> Lexeme ; found
+Error at line# 2: MULTICHAR_CONST_CHAR 'ab;cd'
+Error at line# 3: UNFINISHED_CONST_CHAR 'a;
+	ScopeTable# 1
+Total lines: 3
+Total errors: 2
