@@ -1,0 +1,28 @@
+# YYSTYPE default definition
+	=> int
+
+# yytext gives
+	=> text of the current token [as a string]
+
+# Default flex reads from
+	=> FILE* yyin
+	
+# Flex by default generates
+	=> lex.yy.c
+	=> y.tab.h [we need to include it in the head section]
+
+# Sequence of sections of a flex file
+	=> definitions %% rules %% user_code
+	
+# Bison reads ahead by
+	=> 1 character
+	
+# To assign types to tokens/terminals
+	=> %token
+
+# To assign types to non-terminals
+	=> %type
+	
+# YYLVAL is can be pointed to
+	=> Any custom type
+	
