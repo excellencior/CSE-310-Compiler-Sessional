@@ -26,3 +26,12 @@
 # YYLVAL is can be pointed to
 	=> Any custom type
 	
+# yyleng
+	=> yyleng is an integer that represents the length of the matched text
+
+# yytext length
+	=>The size of yytext is determined by the YY_BUF_SIZE macro, which is usually defined in the generated lex.yy.c file. The default value of YY_BUF_SIZE is 16,384 bytes (or 8,192 bytes on some systems). This means that sizeof(yytext) will be equal to YY_BUF_SIZE, regardless of the length of the matched text.
+
+# exiting a state
+	=> BEGIN INITIAL
+	=> yy_pop_state()
